@@ -24,10 +24,18 @@
     "backup": {
       "enabled": false,
       "schedule": "manual"
+    }
+  },
+  "experimental": {
+    "connection": {
+      "type": "distributed",
+      "database": "devops_experimental",
+      "username": "experimental_admin",
+      "ssl_mode": "verify-full"
     },
-    "features": {
-      "seed_data": true,
-      "debug_queries": true
+    "ai_optimization": {
+      "query_optimization": true,
+      "alert_on_anomaly": true
     }
   }
 }

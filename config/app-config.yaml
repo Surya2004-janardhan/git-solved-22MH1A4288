@@ -12,7 +12,7 @@ logging:
   level: INFO
   format: json
 
-# Development configuration (enabled via environment variable)
+# Development configuration 
 development:
   enabled: false
   port: 3000
@@ -20,3 +20,11 @@ development:
   debug_mode: false
   mock_apis: false
   
+# EXPERIMENTAL FEATURES (NOT PRODUCTION READY)
+# To enable, set experimental_mode: true below
+experimental:
+  enabled: false
+  version: 3.0.0-experimental
+  ai_analysis: disabled
+  chaos_engineering: disabled
+  multi_cloud: [aws, azure, gcp]
